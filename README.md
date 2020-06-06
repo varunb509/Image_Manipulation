@@ -4,19 +4,19 @@
 
   Open a `python` terminal then use below commands
   
-  ` from Main import watermark `  
+  ` from Main import watermark `  <br/>
   ` watermark(input_image_path, output_image_path, watermark_image_path,position_logo,text,color,text_size,                       text_position) `
    
-  ex- 
+  ex- <br/>
    
-  `watermark('gcs-banner.png',                      # Base Image    
-             'watermarked_image_output.jpg',       # Output Image     
-             'invide.png',                         # Watermark Image    
-             'tr',                                 # Watermark Image Position     
-             text='Invide',                        # Warermark Text (optional)     
-             color ='white',                       # Watermark Text Color (optional)    
-             text_size=55,                         # Warermark Text Size (optional)     
-             text_position='b'                     # Watermark Text Position with respect to Watermark Image (optional)     
+  `watermark('gcs-banner.png',                      # Base Image    <br/>
+             'watermarked_image_output.jpg',       # Output Image     <br/>
+             'invide.png',                         # Watermark Image    <br/>
+             'tr',                                 # Watermark Image Position   <br/>  
+             text='Invide',                        # Warermark Text (optional)    <br/> 
+             color ='white',                       # Watermark Text Color (optional)    <br/>
+             text_size=55,                         # Warermark Text Size (optional)    <br/> 
+             text_position='b'                     # Watermark Text Position with respect to Watermark Image (optional)     <br/>
              )  `
 
 ## For watermarking with text only  :
