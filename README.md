@@ -10,11 +10,18 @@
 
 4. For watermarking with image and text (text is optional) 
 
-5. 'from Main import watermark'
+5. from Main import watermark
 
-5. 'watermark(Base_Image_Path,Output_Image_Path,Watermark_Image_Path,Watermark_Text,Watermark_Image_Position,Watermark_Text_Path)
+5. 
+`watermark(input_image_path, output_image_path, watermark_image_path,position_logo,text='',color ='black',text_size=40,                
+ text_position='r')`
    
-   ex- 'watermark('example.jpg','example_out.jpg','logo.png','Price Tag',(0,0),(50,30))'
+   ex- 
+   
+`watermark(input_image_path, output_image_path, watermark_image_path,position_logo,text='',color ='black',text_size=40,                
+ text_position='r')`
+ 
+
 
 6. It should now show and save your desired image.
 
