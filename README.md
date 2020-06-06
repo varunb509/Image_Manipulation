@@ -1,27 +1,62 @@
 # Image_Manipulation
 
-## How to Use :
+## For watermarking with image and text (text is optional)  :
 
-1. Clone the Repository.
-
-2. Open Repository in a Terminal (cmd, anaconda prompt, etc).
-
-3. Type python and hit enter and then below commands.
-
-4. For watermarking with image and text (text is optional) 
-
-5. from Main import watermark
-
-5. 
-`watermark(input_image_path, output_image_path, watermark_image_path,position_logo,text='',color ='black',text_size=40,                
- text_position='r')`
+  Open a `python` terminal.
+  ` from Main import watermark `
+  ` watermark(input_image_path, output_image_path, watermark_image_path,position_logo,text='',color ='black',text_size=40,                   text_position='r') `
    
-   ex- 
+  ex- 
    
-`watermark(input_image_path, output_image_path, watermark_image_path,position_logo,text='',color ='black',text_size=40,                
- text_position='r')`
+  `watermark('gcs-banner.png',                     # Base Image
+              'watermarked_image_output.jpg',       # Output Image 
+              'invide.png',                         # Watermark Image
+              'tr',                                 # Watermark Image Position
+              text='Invide',                        # Warermark Text (optional)
+              color ='white',                       # Watermark Text Color (optional)
+              text_size=55,                         # Warermark Text Size (optional)
+              text_position='b'                     # Watermark Text Position with respect to Watermark Image (optional)
+              )  `
+
+## For watermarking with text only  :
+  Open a `python` terminal.
+  ` from Main import watermark `
+  ` watermark_with_text(input_image_path,output_image_path,text,text_position,color='black',text_size=40,) `
+  
+  ex-
+  
+  ` watermark_with_text('gcs-banner.png',               # Base Image
+                       'watermarked_text_output.png',   # Output Image
+                       'Invide',                        # Warermark Text
+                        'bc',                           # Watermark Text Position
+                       text_size=200,                   # Warermark Text Size (optional)
+                        color='white') `
+                       
+## Positioning parameter for watermark function :
+
+  For Watermark Image                                      For Watermark Text 
+  ` tl - Top Left Corner                                   b - Below Watermark Image
+    tc - Top Center                                        r - On Right Of Watermark Image
+    tr - Top Right
+    cl - Center Left
+    c  - Center 
+    cr - Center Right
+    bl - Bottom Left
+    bc - Bottom Ceter
+    br - Bottom Right `
  
+## Positioning parameter for watermark_with_text function :
 
+    ` tl - Top Left Corner                                
+    tc - Top Center                                      
+    tr - Top Right
+    cl - Center Left
+    c  - Center 
+    cr - Center Right
+    bl - Bottom Left
+    bc - Bottom Ceter
+    br - Bottom Right `
 
-6. It should now show and save your desired image.
+   
+
 
