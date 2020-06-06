@@ -5,7 +5,6 @@
   Open a `python` terminal then use below commands
   
   ` from Main import watermark `
-  
   ` watermark(input_image_path, output_image_path, watermark_image_path,position_logo,text,color,text_size,                   text_position) `
    
   ex- 
