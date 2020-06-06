@@ -6,7 +6,7 @@
   
   ` from Main import watermark `
   
-  ` watermark(input_image_path, output_image_path, watermark_image_path,position_logo,text='',color ='black',text_size=40,                   text_position='r') `
+  ` watermark(input_image_path, output_image_path, watermark_image_path,position_logo,text,color,text_size,                   text_position) `
    
   ex- 
    
@@ -34,7 +34,7 @@
   
     ` from Main import watermark `
   
-    ` watermark_with_text(input_image_path,output_image_path,text,text_position,color='black',text_size=40,) `
+    ` watermark_with_text(input_image_path,output_image_path,text,text_position,color',text_size) `
   
   ex-
   
